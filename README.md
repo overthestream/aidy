@@ -1,3 +1,3 @@
-# stream-project-template
+# aidy
 
-project initialization template with Typescript+React+Mobx+Styled-components+webpack, ESLint+Prettier
+a design system to eliminate repeated components
