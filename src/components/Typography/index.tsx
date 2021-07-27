@@ -57,13 +57,13 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
     const Element = typographyElementTypeMap[elementType];
 
     const TypographyWrapper = styled(Element)<TypographyWrapperProps>`
-      color: ${(styleProps) => styleProps.color};
-      font-weight: ${(styleProps) => styleProps.fontWeight};
-      font-size: ${(styleProps) => styleProps.fontSize};
-      font-family: ${(styleProps) => styleProps.fontFamily};
-      text-decoration: ${(styleProps) => styleProps.textDecoration};
-      text-align: ${(styleProps) => styleProps.textAlign};
-      vertical-align: ${(styleProps) => styleProps.verticalAlign};
+      color: ${(wrapperProps) => wrapperProps.color};
+      font-weight: ${(wrapperProps) => wrapperProps.fontWeight};
+      font-size: ${(wrapperProps) => wrapperProps.fontSize};
+      font-family: ${(wrapperProps) => wrapperProps.fontFamily};
+      text-decoration: ${(wrapperProps) => wrapperProps.textDecoration};
+      text-align: ${(wrapperProps) => wrapperProps.textAlign};
+      vertical-align: ${(wrapperProps) => wrapperProps.verticalAlign};
     `;
     return (
       <TypographyWrapper
