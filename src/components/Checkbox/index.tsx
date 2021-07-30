@@ -64,7 +64,7 @@ const BoxIcon = styled.svg`
 `;
 
 const StyledCheckbox = styled.div<StyledCheckboxProps>`
-  display: inline-flex;
+  display: inline-block;
   width: 16px;
   height: 16px;
   margin-bottom: 1.4px;
