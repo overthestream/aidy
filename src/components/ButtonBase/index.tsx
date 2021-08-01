@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export interface ButtonBaseProps
   extends React.ComponentPropsWithoutRef<'button'> {
-  disabled?: false;
+  disabled?: boolean;
 }
 
 interface ButtonBaseWrapperProps {
