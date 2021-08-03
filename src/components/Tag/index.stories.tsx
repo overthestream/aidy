@@ -5,32 +5,6 @@ import oc from 'open-color';
 
 import Tag, { TagProps } from '.';
 
-type TagVariant = 'default' | 'red' | 'green' | 'blue';
-
-interface TagStyle {
-  backgroundColor: React.CSSProperties['backgroundColor'];
-  color: React.CSSProperties['color'];
-}
-
-const tagVariants: Record<TagVariant, TagStyle> = {
-  default: {
-    backgroundColor: oc.gray[0],
-    color: oc.gray[7],
-  },
-  green: {
-    backgroundColor: oc.green[0],
-    color: oc.green[7],
-  },
-  blue: {
-    backgroundColor: oc.blue[0],
-    color: oc.blue[7],
-  },
-  red: {
-    backgroundColor: oc.red[0],
-    color: oc.red[7],
-  },
-};
-
 const Layout = styled.div`
   display: flex;
   margin-bottom: 8px;
