@@ -63,6 +63,7 @@
         "react/jsx-one-expression-per-line": 0,
         "react/require-default-props": 0,
         "import/no-unresolved": "off",
+        "react/no-array-index-key": "off",
         "import/no-extraneous-dependencies": "off",
         "react/jsx-props-no-spreading": "off",
         "react/display-name": "off",
