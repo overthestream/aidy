@@ -1,5 +1,17 @@
 # aidy
 
-a design system to eliminate repeated components
+Design System AIDY 
 
-an aid for convenient develop
+## install 
+
+for yarn
+
+``` sh
+$ yarn add @overthestream/aidy
+```
+
+for npm
+
+``` sh
+$ npm i @overthestream/aidy
+```
