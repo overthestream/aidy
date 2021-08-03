@@ -24,7 +24,7 @@ const TagWrapper = styled.div<TagWrapperProps>`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-const Button = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
+const Tag = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
   const {
     typographyProps = { color: oc.blue[9] },
     padding = '8px 10px',
@@ -45,4 +45,4 @@ const Button = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
   );
 });
 
-export default Button;
+export default Tag;
