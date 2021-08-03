@@ -1,7 +1,10 @@
 {
-  "name": "template",
-  "version": "1.0.0",
-  "main": "src/index.tsx",
+  "name": "@overthestream/aidy",
+  "version": "0.0.1",
+  "description": "Design System Aidy",
+  "repository": "https://github.com/overthestream/aidy.git",
+  "author": "overthestream <njhnjh02@naver.com>",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --mode development --config ./webpack.config.dev.js --hot --open",
@@ -54,7 +57,7 @@
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "open-color": "^1.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
