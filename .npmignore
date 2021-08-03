@@ -6,3 +6,6 @@ src/components/Card/cardImg.jpg
 .babelrc
 .eslintrc.json
 .prettierrc
+tsconfig.json
+webpack.config.dev.js
+webpack.config.js
