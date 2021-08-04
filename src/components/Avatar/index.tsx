@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsFillPersonFill } from 'react-icons/bs';
 
-type Shape = 'circle' | 'square';
+export type AvatarShape = 'circle' | 'square';
 
 export interface AvatarProps extends React.ComponentPropsWithoutRef<'div'> {
-  shape?: Shape;
+  shape?: AvatarShape;
   size?: React.CSSProperties['width'];
   icon?: React.ReactElement;
   hasBorder?: boolean;

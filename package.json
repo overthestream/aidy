@@ -1,10 +1,10 @@
 {
   "name": "@overthestream/aidy",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Design System Aidy",
   "repository": "https://github.com/overthestream/aidy.git",
   "author": "overthestream <njhnjh02@naver.com>",
-  "main": "index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --mode development --config ./webpack.config.dev.js --hot --open",
