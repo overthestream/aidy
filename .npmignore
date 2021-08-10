@@ -3,9 +3,7 @@ node_modules/
 src/components/**/index.stories.tsx
 src/components/Card/cardImg.jpg
 .gitignore
-.babelrc
 .eslintrc.json
 .prettierrc
 tsconfig.json
-webpack.config.dev.js
-webpack.config.js
+.env

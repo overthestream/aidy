@@ -1,26 +1,30 @@
 {
   "name": "@overthestream/aidy",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "description": "Design System Aidy",
   "repository": "https://github.com/overthestream/aidy.git",
   "author": "overthestream <njhnjh02@naver.com>",
-  "main": "index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve --mode development --config ./webpack.config.dev.js --hot --open",
-    "build": "webpack --mode production --config=./webpack.config.js",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "build:sb": "build-storybook -o build",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "@babel/preset-typescript": "^7.12.7",
+    "@babel/cli": "^7.14.8",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
@@ -30,11 +34,9 @@
     "@types/styled-components": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
-    "babel": "^6.23.0",
-    "babel-loader": "^8.2.2",
-    "babel-plugin-styled-components": "^1.12.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "css-loader": "^5.0.1",
+    "auto": "^10.30.0",
+    "babel-preset-react-app": "^10.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.17.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",
@@ -43,24 +45,13 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "file-loader": "^6.2.0",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.1",
-    "prettier": "^2.2.1",
-    "style-loader": "^2.0.0",
-    "svg-url-loader": "^7.1.1",
-    "terser-webpack-plugin": "^5.1.1",
-    "tsconfig-paths-webpack-plugin": "^3.5.1",
-    "typescript": "^4.1.3",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.15.0",
-    "webpack-cli": "^4.4.0",
-    "webpack-dev-server": "^3.11.2",
     "open-color": "^1.8.0",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "open-color": "^1.8.0",
