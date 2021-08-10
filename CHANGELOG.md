@@ -1,3 +1,16 @@
+# v0.1.4 (Tue Aug 10 2021)
+
+#### 🐛 Bug Fix
+
+- chore: remove useless option [#17](https://github.com/overthestream/aidy/pull/17) ([@overthestream](https://github.com/overthestream))
+- add build setting for type declaration [#16](https://github.com/overthestream/aidy/pull/16) ([@overthestream](https://github.com/overthestream))
+
+#### Authors: 1
+
+- Jeonghoon Rho ([@overthestream](https://github.com/overthestream))
+
+---
+
 # v0.1.3 (Tue Aug 10 2021)
 
 #### 🐛 Bug Fix
