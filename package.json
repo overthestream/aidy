@@ -9,6 +9,7 @@
   "scripts": {
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "build:sb": "build-storybook -o build",
+    "build:types": "tsc --emitDeclarationOnly",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
