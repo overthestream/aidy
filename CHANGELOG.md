@@ -10,7 +10,7 @@ first version of design system, aidy.
 - Card
 - Checkbox
 - ResponsiveBox
-- TAg
+- Tag
 - Typography
 
 #### Authors: 1
