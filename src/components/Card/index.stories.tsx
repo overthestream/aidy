@@ -2,7 +2,6 @@ import { Story } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 
-import cardImg from './cardImg.jpg';
 import Card, { Text, CardProps } from '.';
 
 const Img = styled.img`
@@ -17,7 +16,7 @@ export const Gallery: Story = () => {
   };
   return (
     <>
-      <Card text={text} cardImg={<Img src={cardImg} alt="profile" />} />
+      <Card text={text} cardImg={<Img alt="profile" />} />
     </>
   );
 };
