@@ -41,7 +41,7 @@ const typographyElementTypeMap: Record<
   div: 'div',
 };
 
-const Typography = React.forwardRef<HTMLElement, TypographyProps>(
+export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
   (props, ref) => {
     const {
       elementType = 'div',
@@ -82,4 +82,3 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
     );
   }
 );
-export default Typography;

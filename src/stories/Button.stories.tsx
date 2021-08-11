@@ -2,7 +2,7 @@ import { Story } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 
-import Button, { ButtonProps, ButtonVariant } from '.';
+import { Button, ButtonProps, ButtonVariant } from '../components/Button';
 
 const Layout = styled.div`
   display: flex;

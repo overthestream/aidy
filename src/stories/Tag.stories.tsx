@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import oc from 'open-color';
 
-import Tag, { TagProps } from '.';
+import { Tag, TagProps } from '../components/Tag';
 
 const Layout = styled.div`
   display: flex;

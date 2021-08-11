@@ -21,13 +21,13 @@ const AvatarWrapper = styled.div<AvatarWrapperProps>`
   border: ${(props) => (props.hasBorder ? '2px solid' : 'none')};
 `;
 
-const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
-  const { shape = 'circle', size = '16px', icon, hasBorder = true } = props;
-  return (
-    <AvatarWrapper hasBorder={hasBorder} ref={ref} shape={shape} size={size}>
-      {icon || <BsFillPersonFill />}
-    </AvatarWrapper>
-  );
-});
-
-export default Avatar;
+export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+  (props, ref) => {
+    const { shape = 'circle', size = '16px', icon, hasBorder = true } = props;
+    return (
+      <AvatarWrapper hasBorder={hasBorder} ref={ref} shape={shape} size={size}>
+        {icon || <BsFillPersonFill />}
+      </AvatarWrapper>
+    );
+  }
+);

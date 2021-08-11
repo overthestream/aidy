@@ -2,7 +2,7 @@ import { Story } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 
-import ResponsiveBox, { ResponsiveBoxProps } from '.';
+import { ResponsiveBox, ResponsiveBoxProps } from '../components/ResponsiveBox';
 
 const ImplBox = styled.div`
   height: 200px;

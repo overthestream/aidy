@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import oc from 'open-color';
 
-import Typography, { TypographyProps } from '../Typography';
+import { Typography, TypographyProps } from './Typography';
 
 export interface TagProps extends React.ComponentPropsWithoutRef<'div'> {
   padding?: React.CSSProperties['padding'];
@@ -24,7 +24,7 @@ const TagWrapper = styled.div<TagWrapperProps>`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-const Tag = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
+export const Tag = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
   const {
     typographyProps = { color: oc.blue[9] },
     padding = '8px 10px',
@@ -44,5 +44,3 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
     </TagWrapper>
   );
 });
-
-export default Tag;

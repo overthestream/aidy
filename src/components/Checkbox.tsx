@@ -96,7 +96,7 @@ const CheckboxLabel = styled.label`
   vertical-align: text-bottom;
 `;
 
-const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, ref) => {
     const {
       isDisabled = false,
@@ -139,5 +139,3 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     );
   }
 );
-
-export default Checkbox;

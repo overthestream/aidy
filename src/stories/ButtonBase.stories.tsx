@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 import React from 'react';
 
-import ButtonBase, { ButtonBaseProps } from '.';
+import { ButtonBase, ButtonBaseProps } from '../components/ButtonBase';
 
 export const Gallery: Story = () => {
   return <ButtonBase>Lorem Ipsum</ButtonBase>;
