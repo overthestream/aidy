@@ -1,3 +1,15 @@
+# v0.2.0 (Wed Aug 11 2021)
+
+#### 🚀 Enhancement
+
+- 진짜진짜최종 타입선언 성공^^ [#18](https://github.com/overthestream/aidy/pull/18) ([@overthestream](https://github.com/overthestream))
+
+#### Authors: 1
+
+- Jeonghoon Rho ([@overthestream](https://github.com/overthestream))
+
+---
+
 # v0.1.4 (Tue Aug 10 2021)
 
 #### 🐛 Bug Fix
