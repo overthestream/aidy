@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import oc from 'open-color';
-import ButtonBase, { ButtonBaseProps } from '../ButtonBase';
+import { ButtonBase, ButtonBaseProps } from './ButtonBase';
 
 export type ButtonVariant = 'default' | 'red' | 'green' | 'blue';
 
@@ -76,7 +76,7 @@ const ButtonWrapper = styled(ButtonBase)<ButtonWrapperProps>`
   }
 `;
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
     const { fontWeight, padding, variant = 'default', children } = props;
     const theme = buttonVariantMap[variant];
@@ -93,5 +93,3 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
-
-export default Button;

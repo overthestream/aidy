@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 import React from 'react';
 
-import Avatar, { AvatarProps } from '.';
+import { Avatar, AvatarProps } from '../components/Avatar';
 
 export const Gallery: Story = () => {
   return <Avatar />;

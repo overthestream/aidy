@@ -1,7 +1,11 @@
 import { Story } from '@storybook/react';
 import React from 'react';
 
-import Checkbox, { CheckboxProps, CheckboxVariant } from '.';
+import {
+  Checkbox,
+  CheckboxProps,
+  CheckboxVariant,
+} from '../components/Checkbox';
 
 export const Gallery: Story = () => {
   const defaultChecks: boolean[] = [true, false];

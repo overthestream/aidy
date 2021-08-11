@@ -1,7 +1,11 @@
 import { Story } from '@storybook/react';
 import React from 'react';
 
-import Typography, { TypographyElementType, TypographyProps } from '.';
+import {
+  Typography,
+  TypographyElementType,
+  TypographyProps,
+} from '../components/Typography';
 
 export const Gallery: Story = () => {
   const typographElements: TypographyElementType[] = [

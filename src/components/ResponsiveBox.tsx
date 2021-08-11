@@ -16,15 +16,14 @@ const ResponsiveBoxWrapper = styled.div`
 
 export type ResponsiveBoxProps = React.ComponentPropsWithoutRef<'div'>;
 
-const ResponsiveBox = React.forwardRef<HTMLDivElement, ResponsiveBoxProps>(
-  (props, ref) => {
-    const { children } = props;
-    return (
-      <ResponsiveBoxWrapper ref={ref} {...props}>
-        {children}
-      </ResponsiveBoxWrapper>
-    );
-  }
-);
-
-export default ResponsiveBox;
+export const ResponsiveBox = React.forwardRef<
+  HTMLDivElement,
+  ResponsiveBoxProps
+>((props, ref) => {
+  const { children } = props;
+  return (
+    <ResponsiveBoxWrapper ref={ref} {...props}>
+      {children}
+    </ResponsiveBoxWrapper>
+  );
+});

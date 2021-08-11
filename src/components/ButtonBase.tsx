@@ -23,7 +23,7 @@ const ButtonBaseWrapper = styled.button<ButtonBaseWrapperProps>`
   }
 `;
 
-const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonBaseProps>(
+export const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonBaseProps>(
   (props, ref) => {
     const { disabled = false, children } = props;
     return (
@@ -33,5 +33,3 @@ const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonBaseProps>(
     );
   }
 );
-
-export default ButtonBase;

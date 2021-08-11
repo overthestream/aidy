@@ -2,7 +2,7 @@ import { Story } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 
-import Card, { Text, CardProps } from '.';
+import { Card, Text, CardProps } from '../components/Card';
 
 const Img = styled.img`
   width: 200px;

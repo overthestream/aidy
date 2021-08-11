@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import oc from 'open-color';
-import Typography, { TypographyProps } from '../Typography';
+import { Typography, TypographyProps } from './Typography';
 
 export type Text = {
   title?: string;
@@ -43,42 +43,42 @@ const CardWrapper = styled.div<CardWrapperProps>`
   border-color: ${(props) => props.borderColor};
 `;
 
-const Card = React.forwardRef<HTMLDivElement, CardProps>((props, ref) => {
-  const {
-    text,
-    backgroundColor = oc.white,
-    padding = '16px',
-    border,
-    borderColor,
-    cardImg,
-  } = props;
-  return (
-    <CardWrapper
-      border={border}
-      borderColor={borderColor}
-      padding={padding}
-      backgroundColor={backgroundColor}
-      ref={ref}
-      {...props}
-    >
-      {cardImg ? (
-        <>
-          <ImgWrapper>{cardImg}</ImgWrapper>
-          <Divider />
-        </>
-      ) : (
-        <div />
-      )}
-      {text.title ? (
-        <Typography fontWeight="bold" {...text.typographyProps}>
-          {text.title}{' '}
-        </Typography>
-      ) : (
-        <div />
-      )}
-      <Typography {...text.typographyProps}>{text.content}</Typography>
-    </CardWrapper>
-  );
-});
-
-export default Card;
+export const Card = React.forwardRef<HTMLDivElement, CardProps>(
+  (props, ref) => {
+    const {
+      text,
+      backgroundColor = oc.white,
+      padding = '16px',
+      border,
+      borderColor,
+      cardImg,
+    } = props;
+    return (
+      <CardWrapper
+        border={border}
+        borderColor={borderColor}
+        padding={padding}
+        backgroundColor={backgroundColor}
+        ref={ref}
+        {...props}
+      >
+        {cardImg ? (
+          <>
+            <ImgWrapper>{cardImg}</ImgWrapper>
+            <Divider />
+          </>
+        ) : (
+          <div />
+        )}
+        {text.title ? (
+          <Typography fontWeight="bold" {...text.typographyProps}>
+            {text.title}{' '}
+          </Typography>
+        ) : (
+          <div />
+        )}
+        <Typography {...text.typographyProps}>{text.content}</Typography>
+      </CardWrapper>
+    );
+  }
+);
