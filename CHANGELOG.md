@@ -1,3 +1,15 @@
+# v0.3.1 (Thu Aug 19 2021)
+
+#### 🐛 Bug Fix
+
+- package: fix [#20](https://github.com/overthestream/aidy/pull/20) ([@overthestream](https://github.com/overthestream))
+
+#### Authors: 1
+
+- Jeonghoon Rho ([@overthestream](https://github.com/overthestream))
+
+---
+
 # v0.3.0 (Thu Aug 19 2021)
 
 #### 🚀 Enhancement
