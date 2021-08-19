@@ -1,3 +1,15 @@
+# v0.3.0 (Thu Aug 19 2021)
+
+#### 🚀 Enhancement
+
+- chore: build 방식 rollup으로 변경 [#19](https://github.com/overthestream/aidy/pull/19) ([@overthestream](https://github.com/overthestream))
+
+#### Authors: 1
+
+- Jeonghoon Rho ([@overthestream](https://github.com/overthestream))
+
+---
+
 # v0.2.0 (Wed Aug 11 2021)
 
 #### 🚀 Enhancement
